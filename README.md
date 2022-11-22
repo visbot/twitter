@@ -4,7 +4,7 @@ Take ownership of your Twitter data. First talked about at [Jamstack Conf 2019](
 
 ## Demos
 
-* https://visbot.github.io/twitter
+* https://visbot.github.io/twitter-archive
 
 ## Features
 

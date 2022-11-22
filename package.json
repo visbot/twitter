@@ -1,12 +1,13 @@
 {
-  "name": "tweetback",
+  "name": "@visbot/twitter-archive",
+  "private": true,
   "version": "1.0.0",
   "description": "Take ownership of your Twitter data and host your own Twitter archive.",
   "scripts": {
     "clean": "rm -rf .cache",
     "import": "node database/import-from-archive.js",
     "fetch-new-data": "node database/fetchFromApi.js",
-    "build": "npx @11ty/eleventy --quiet --pathprefix 'twitter'",
+    "build": "npx @11ty/eleventy --quiet --pathprefix 'twitter-archive'",
     "start": "npx @11ty/eleventy --quiet --serve"
   },
   "keywords": [],
