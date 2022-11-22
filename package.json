@@ -6,7 +6,7 @@
     "clean": "rm -rf .cache",
     "import": "node database/import-from-archive.js",
     "fetch-new-data": "node database/fetchFromApi.js",
-    "build": "npx @11ty/eleventy --quiet",
+    "build": "npx @11ty/eleventy --quiet --pathprefix 'twitter'",
     "start": "npx @11ty/eleventy --quiet --serve"
   },
   "keywords": [],
