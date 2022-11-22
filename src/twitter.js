@@ -148,6 +148,11 @@ class Twitter {
 			for(let url of tweet.entities.urls) {
 				if(url.expanded_url.indexOf(`/${tweet.id}/photo/`) > -1) { // || url.expanded_url.indexOf(`/${tweet.id}/video/`) > -1) {
 					text = text.replace(url.url, "");
+				} else if(/^https?:\/\/(www.)?youtube(-nocookie)?.com|youtu.be/.test(url.expanded_url)) { //
+					let {targetUrl} = this.getUrlObject(url);
+					targetUrl = twitterLink(targetUrl);
+					let displayUrlHtml = `<iframe width="560" height="315" src="${targetUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen crossorigin="anonymous" />`
+					text = text.replace(url.url, displayUrlHtml);
 				} else {
 					let {targetUrl, className, displayUrl} = this.getUrlObject(url);
 					targetUrl = twitterLink(targetUrl);
