@@ -1,6 +1,6 @@
 let data = {
 	username: "visbot", // No leading @ here
-	homeLabel: "visbot.net",
+	homeLabel: "Home",
 	homeUrl: "https://visbot.github.io/twitter/",
 };
 
