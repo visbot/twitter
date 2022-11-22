@@ -4,8 +4,7 @@ Take ownership of your Twitter data. First talked about at [Jamstack Conf 2019](
 
 ## Demos
 
-* https://www.zachleat.com/twitter/
-* https://twitter.11ty.dev/
+* https://visbot.github.io/twitter
 
 ## Features
 
